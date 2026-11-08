@@ -1,0 +1,13 @@
+{
+  "name": "integration-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Muestro validación de datos, firmas HMAC y flujos deterministas con datos sintéticos.",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "demo": "node examples/run.mjs"
+  }
+}
