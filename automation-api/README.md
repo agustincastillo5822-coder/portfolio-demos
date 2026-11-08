@@ -1,5 +1,5 @@
 # API de solicitudes con idempotencia
-Demo original con Node.js 24 y SQLite incluido en Node, sin dependencias de terceros.
+Desarrollé esta demo con asistencia de IA usando Node.js 24 y su SQLite integrado. Muestro cómo valido, registro y consulto solicitudes con idempotencia.
 
 ## Ejecutar
 ```sh
@@ -9,7 +9,9 @@ curl http://127.0.0.1:8787/requests -H 'Content-Type: application/json' -H 'Idem
 ```
 Consultar el ID devuelto con `GET /requests/ID`. Repetir la misma clave y contenido devuelve la misma solicitud (200); cambiar contenido con la misma clave devuelve 409. Primera creación: 201. Datos persistidos en requests.sqlite en el directorio de ejecución.
 
-Sólo admite title (1–120 caracteres al recortar) y kind (`report`, `integration`, `review`), claves alfanuméricas/guion/guion bajo de 1–80 caracteres y cuerpos JSON hasta 16 KiB. No modifica la solicitud al repetirla.
+Sólo admite title (1–120 caracteres al recortar) y kind (`report`, `integration`, `review`), claves alfanuméricas/guion/guion bajo de 1–80 caracteres y cuerpos JSON hasta 16 KiB. Conservo la solicitud original al repetirla.
 
-## Límites deliberados
-Una instancia de Node; no es un sistema distribuido. No tiene autenticación, TLS, cuotas, historial de auditoría, workers ni envío de mensajes. Escucha sólo en loopback. Estado `queued` significa registro de una solicitud ficticia, no ejecución. La clave deduplica solicitudes, no garantiza efectos externos exactamente una vez. No exponer a Internet. SQLite se guarda en texto claro; usar sólo datos ficticios. La base no se incluye en el portfolio.
+## Alcance técnico
+Trabajo con una instancia local de Node y escucha en loopback. Registro solicitudes ficticias con estado `queued`; la clave de idempotencia identifica el registro persistido. Uso una base SQLite local en texto claro para datos de demostración.
+
+Para un despliegue externo tendría que incorporar autenticación, TLS, cuotas, auditoría y gestión de workers, además de diseñar la coordinación entre instancias y efectos externos. Mantengo esta muestra para ejecución local con datos ficticios.
