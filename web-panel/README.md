@@ -1,5 +1,8 @@
-# Panel de solicitudes
-Demo original React, Next.js y TypeScript. Datos ficticios incluidos; no conecta con la API ni ejecuta tareas. Filtros de texto y estado, contador, vacío y restablecimiento. Sin persistencia: recargar restablece los filtros.
+# Mi panel de solicitudes
+
+Desarrollé esta demo con asistencia de IA usando React, Next.js y TypeScript. Muestro filtros por texto y estado, contador, estado vacío y restablecimiento con datos ficticios. Mantengo el estado en la interfaz durante la sesión.
+
+## Cómo lo ejecuto
 
 ```sh
 npm ci
@@ -8,8 +11,11 @@ npm run typecheck
 npm run build
 npm run start -- --port 3058
 ```
-Abrir http://127.0.0.1:3058 . Node.js 24 usado en la verificación.
 
-El test opcional `node tests/browser.mjs` espera servidor en ese puerto y Chromium en /usr/bin/chromium; adaptar executablePath a la instalación local. El navegador no pudo iniciarse en el entorno de preparación por restricciones de socket. Por eso las interacciones y la adaptación visual móvil **no se declaran verificadas** todavía. Build, tipos y filtrado sí se verificaron.
+Abro http://127.0.0.1:3058 con Node.js 24.
 
-No usa fotos, logos ni assets empresariales. Estilo CSS original inspirado en un concepto generado para esta demo. No requiere servicios pagos ni claves.
+## Mis comprobaciones
+
+Verifiqué filtrado, tipos y compilación. Tengo pendiente la validación visual móvil y de interacciones: Chromium encontró una restricción de socket en el entorno de preparación. Incluyo `tests/browser.mjs` para ejecutarlo con el servidor en el puerto 3058 y ajustar `executablePath` a una instalación autorizada de Chromium.
+
+Diseñé el CSS para esta demo y uso muestras ficticias. La integración con una API y la persistencia entre sesiones quedan como extensiones posteriores.
