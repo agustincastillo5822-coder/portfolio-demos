@@ -1,0 +1,7 @@
+id,category,quantity,unit_price
+DEMO-001,Automatizacion,2,125.50
+DEMO-002,Datos,3,40.25
+DEMO-003,"Contenido, editorial",1,80.00
+DEMO-004,Datos,2,10.00
+DEMO-002,Datos,1,5.00
+DEMO-005,Automatizacion,-1,12.00
