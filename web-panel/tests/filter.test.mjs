@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {filterRequests,requests} from '../lib/requests.ts';
+test('filter by normalized title and status without mutation',()=>{assert.equal(filterRequests(requests,' CATÁLOGO ','all').length,1);assert.equal(filterRequests(requests,'','pending').length,2);assert.equal(filterRequests(requests,'API','done').length,0);assert.equal(requests.length,4);assert.equal(filterRequests(requests,'','all').length,4);});
