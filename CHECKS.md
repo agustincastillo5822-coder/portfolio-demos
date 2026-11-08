@@ -1,8 +1,6 @@
-# Verificación reproducible
+# Mis comprobaciones
 
-Requiere Node.js 24.
-
-Desde la raíz:
+Uso Node.js 24. Desde la raíz ejecuto:
 
 ```sh
 node --test automation-api/api.test.mjs document-fingerprint/hash.test.mjs web-panel/tests/filter.test.mjs
@@ -12,4 +10,6 @@ npm run typecheck
 npm run build
 ```
 
-Resultado local del 8 de noviembre de 2026: 7 pruebas aprobadas, tipo y compilación aprobados. El verificador CLI se prueba con ruta independiente del directorio actual. La revisión visual y las pruebas de navegador todavía no están completadas. No se realizó despliegue público.
+El 8 de noviembre de 2026 verifiqué las 7 pruebas originales, TypeScript y la compilación con resultado aprobado. También probé la CLI desde un directorio diferente.
+
+Mantengo pendiente la validación visual y de interacciones del panel: Chromium encontró una restricción de socket en el entorno de preparación. El alcance verificado hasta aquí es ejecución local, lógica, tipos y compilación.
