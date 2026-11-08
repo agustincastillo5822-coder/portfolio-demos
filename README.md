@@ -17,4 +17,4 @@ Tres demos originales preparadas para el portfolio de Agustín Ignacio Castillo,
 Código de demostración preparado y probado localmente. Este repositorio contiene el código fuente; no hay una aplicación desplegada. Pruebas locales: 7/7 aprobadas, compilación de Next.js y chequeo TypeScript aprobados. La validación visual y de interacciones en navegador está pendiente. No se concede una licencia adicional de redistribución en este paquete.
 
 ## Privacidad
-No incluir secretos, datos reales de clientes ni documentos personales. El correo de la cuenta GitHub no se incorpora al código ni a commits. Las demos usan solamente muestras ficticias.
+No incluir secretos, datos reales de clientes ni documentos personales. Las demos usan solamente muestras ficticias.
