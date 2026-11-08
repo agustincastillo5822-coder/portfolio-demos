@@ -1,20 +1,20 @@
-# Muestras personales de desarrollo
+# Mi portfolio de desarrollo
 
-Tres demos originales preparadas para el portfolio de Agustín Ignacio Castillo, con asistencia de IA. No representan clientes, ingresos ni experiencia comercial previa. No contienen código de Capa Cero, Nodo Sur, Devrim o Ailén.
+Desarrollo productos digitales con asistencia de IA desde 2025. En este repositorio comparto ejemplos originales con datos ficticios, instrucciones reproducibles y pruebas.
 
-## Proyectos
-- [Panel Next.js](web-panel/README.md): filtros por texto y estado sobre datos ficticios.
-- [API de automatización](automation-api/README.md): validación, SQLite e idempotencia. Registra solicitudes; **no ejecuta automatizaciones reales**.
-- [Huella documental](document-fingerprint/README.md): SHA-256 local y comparación, sin subir documentos.
+## Mis ejemplos
 
-## Casos empresariales, sin código privado
-- Capa Cero: https://capacero.ar/
-- Nodo Sur: https://nodosurchain.ar/
-- Devrim: https://estudiodevrim.com.ar/ (desarrollo web acreditado a Capa Cero; dirección creativa de Amira Mendoza Yapur).
-- LiliReflex: https://github.com/capacerostackstudio/lilireflex . Agustín confirma que es un fork de su autoría. Se conserva la atribución al upstream y no se copiaron assets ni código. Las autorizaciones de assets y el estado de lanzamiento no se han verificado en este trabajo.
+- [Panel web](web-panel/README.md): construyo una interfaz en Next.js y React con filtros por texto y estado.
+- [API de solicitudes](automation-api/README.md): valido datos, uso SQLite y deduplico solicitudes con claves de idempotencia.
+- [Huella documental](document-fingerprint/README.md): calculo y comparo SHA-256 mediante procesamiento local de archivos.
 
-## Estado
-Código de demostración preparado y probado localmente. Este repositorio contiene el código fuente; no hay una aplicación desplegada. Pruebas locales: 7/7 aprobadas, compilación de Next.js y chequeo TypeScript aprobados. La validación visual y de interacciones en navegador está pendiente. No se concede una licencia adicional de redistribución en este paquete.
+## Mis proyectos
 
-## Privacidad
-No incluir secretos, datos reales de clientes ni documentos personales. Las demos usan solamente muestras ficticias.
+- [Capa Cero](https://capacero.ar/)
+- [Nodo Sur Chain](https://nodosurchain.ar/)
+- [Estudio Devrim](https://estudiodevrim.com.ar/): presento el desarrollo web acreditado a Capa Cero, con dirección creativa de Amira Mendoza Yapur.
+- [LiliReflex](https://lilireflex.capacero.ar/): comparto mi fork y su [repositorio público](https://github.com/capacerostackstudio/lilireflex), con atribución al proyecto original.
+
+## Mi proceso
+
+Desarrollé estas demos con asistencia de IA. Incluyo el código fuente y documento la ejecución local y las comprobaciones en [CHECKS.md](CHECKS.md).
