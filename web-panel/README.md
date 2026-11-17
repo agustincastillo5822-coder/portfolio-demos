@@ -16,6 +16,13 @@ Abro http://127.0.0.1:3058 con Node.js 24.
 
 ## Mis comprobaciones
 
-Verifiqué filtrado, tipos y compilación. Tengo pendiente la validación visual móvil y de interacciones: Chromium encontró una restricción de socket en el entorno de preparación. Incluyo `tests/browser.mjs` para ejecutarlo con el servidor en el puerto 3058 y ajustar `executablePath` a una instalación autorizada de Chromium.
+Verifiqué filtrado, tipos, compilación y el recorrido visual e interactivo en escritorio y móvil. Probé búsqueda, estado vacío, filtros combinados, restablecimiento y recarga. Incluyo `tests/browser.mjs` para repetir estas comprobaciones con el servidor en el puerto 3058.
+
+```sh
+npx playwright install chromium
+node tests/browser.mjs
+```
+
+Puedo usar una instalación existente mediante `CHROMIUM_PATH` y otro servidor local mediante `PANEL_BASE_URL`.
 
 Diseñé el CSS para esta demo y uso muestras ficticias. La integración con una API y la persistencia entre sesiones quedan como extensiones posteriores.
